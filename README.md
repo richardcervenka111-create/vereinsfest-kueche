@@ -1,6 +1,6 @@
 # Vereinsfest-Küche
 
-Checkliste Lebensmittelsicherheit für den Stand am Vereinsfest, Quartierfest oder Turnier: vor dem Fest, am Tag, während, beim Aufräumen. 24 Punkte, die kritischen markiert, die vier Temperaturen, die zählen. Abhaken im Browser, drucken für den Stand. DE/EN/SK, kein Tracking.
+Checkliste Lebensmittelsicherheit für den Stand am Vereinsfest, Quartierfest oder Turnier: vor dem Fest, am Tag, während, beim Aufräumen. 24 Punkte, die kritischen markiert, die vier Temperaturen, die zählen. Abhaken im Browser, drucken für den Stand. DE/EN, kein Tracking.
 
 Live: **https://richardcervenka111-create.github.io/vereinsfest-kueche/**
 
