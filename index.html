@@ -206,11 +206,11 @@ var top=document.querySelector('.k-top.sticky'); if(top){ var on=false; window.a
 <script>
 (function(){
 const L={
- de:{h:"Vereinsfest-Küche",s:"Lebensmittelsicherheit für den Stand am Fest. Abhaken, was erledigt ist; ! = wenn das fehlt, gibt es das Fest nicht. Der Stand wird im Browser gespeichert, nichts wird gesendet.",ht:"Die vier Zahlen, die zählen",print:"Drucken",reset:"Zurücksetzen",done:"erledigt",
+ de:{desc:"Checkliste Lebensmittelsicherheit für Vereinsfeste, Stände und Quartierfeste: vor dem Fest, am Tag, beim Aufräumen. Abhaken, drucken. Kein Tracking.",logo:"Vereinsfest-Küche Logo",h:"Vereinsfest-Küche",s:"Lebensmittelsicherheit für den Stand am Fest. Abhaken, was erledigt ist; ! = wenn das fehlt, gibt es das Fest nicht. Der Stand wird im Browser gespeichert, nichts wird gesendet.",ht:"Die vier Zahlen, die zählen",print:"Drucken",reset:"Zurücksetzen",done:"erledigt",
    temps:[["≤ 5 °C","Kühlkette: Fleisch, Fisch, Milchprodukte, Salate mit Mayonnaise"],["≥ 65 °C","Warmhalten: alles Gekochte, das nicht sofort raus geht"],["≥ 72 °C","Kerntemperatur beim Garen, 2 Minuten; Geflügel und Hack immer"],["2 h","Maximal ohne Kühlung oder Warmhaltung, danach weg"]],
    sec:[["Vorher (Woche davor)",[
      ["Verantwortliche Person benennen","Eine Person kennt diese Liste, hat das Thermometer und sagt im Zweifel Nein.",1],
-     ["Meldung an die Gemeinde / Lebensmittelkontrolle prüfen","Öffentliche Abgabe von Lebensmitteln ist meldepflichtig; Fest und Stand beim Kanton (Lebensmittelkontrolle Bern) oder der Gemeinde anmelden, sofern nicht die Veranstaltung das übernimmt.",1],
+     ["Meldung an die Gemeinde / Lebensmittelkontrolle prüfen","Öffentliche Abgabe von Lebensmitteln ist meldepflichtig; Fest und Stand beim Kanton (Lebensmittelkontrolle Bern) oder der Gemeinde anmelden, sofern das nicht die Veranstaltung übernimmt.",1],
      ["Menü einfach halten","Wenige Gerichte, die man durchgaren kann. Nichts mit rohem Ei, keine Mayonnaise selber machen, keine Tartare.",0],
      ["Allergene deklarieren","Die 14 Allergene pro Gericht sichtbar am Stand. Generator: allergen-poster (gleicher Ordner).",1],
      ["Kühlung planen","Kühlschrank oder Kühlbox mit genug Akkus, Thermometer drin. Pro Kühlbox ein Thermometer.",1],
@@ -222,7 +222,7 @@ const L={
      ["Roh und fertig trennen","Separate Bretter und Messer für rohes Fleisch (rot) und Fertiges (grün). Rohes unten im Kühlschrank, Fertiges oben.",1],
      ["Geld und Essen trennen","Eine Person Kasse, eine Person Essen. Geht nicht: Handschuh fürs Essen, ausziehen fürs Geld.",0],
      ["Abfall organisiert","Eimer mit Deckel, Abstand zur Ausgabe, regelmässig raus.",0],
-     ["Wer ist krank, bleibt weg","Durchfall, Erbrechen, Fieber in den letzten 48 Stunden: nicht am Essen. Das ist die häufigste Ursache von Ausbrüchen.",1],
+     ["Wer krank ist, bleibt weg","Durchfall, Erbrechen, Fieber in den letzten 48 Stunden: nicht am Essen. Das ist die häufigste Ursache von Ausbrüchen.",1],
    ]],["Während des Fests",[
      ["Durchgaren und messen","Kerntemperatur 72 °C, 2 Minuten. Geflügel, Hack, Bratwurst: immer messen, nicht schätzen.",1],
      ["Warmhalten ≥ 65 °C","Was fertig ist und wartet, bleibt über 65 °C oder geht in die Kühlung. Lauwarm ist die Gefahrenzone.",1],
@@ -231,43 +231,43 @@ const L={
      ["Kein Probieren mit dem Finger, kein Doppel-Löffel","Löffel einmal, dann Abwasch. Klingt kleinlich, ist Norovirus.",0],
      ["Kühlung alle 2 Stunden messen","Wert und Zeit notieren. Der Zettel ist eure Absicherung, wenn jemand nachfragt.",1],
    ]],["Aufräumen",[
-     ["Reste: Kühl gelagert und heute noch gegessen, sonst weg","Gekochtes, das warm stand, nicht mehr aufheben. Ungeöffnete gekühlte Ware ja.",1],
+     ["Reste: kühl gelagert und heute noch gegessen, sonst weg","Gekochtes, das warm stand, nicht mehr aufheben. Ungeöffnete gekühlte Ware ja.",1],
      ["Nichts Warmes in den Kühlschrank","Erst abkühlen (max. 2 h), dann rein, sonst wärmt es alles andere.",0],
      ["Reinigen, dann desinfizieren","Erst Schmutz weg mit Spülmittel, dann Desinfektion; umgekehrt wirkt es nicht.",0],
      ["Notizen aufbewahren","Temperaturzettel, Einkaufsbelege, Allergen-Poster: 1 Monat behalten.",0],
    ]]],
    foot:'Zusammengestellt aus der Berufspraxis eines Kochs nach den Grundsätzen der Guten Hygienepraxis (Lebensmittelgesetz LMG, Hygieneverordnung HyV, Leitlinie für Vereine und Festwirtschaften). Es ist eine Checkliste, keine Rechtsberatung: die Meldepflicht und die Anforderungen klärt der Kanton, in Bern das <a href="https://www.weu.be.ch/de/start/themen/lebensmittel-gebrauchsgegenstaende.html">Kantonale Laboratorium / Lebensmittelkontrolle</a>. Kein Tracking. <a href="https://github.com/richardcervenka111-create/vereinsfest-kueche">GitHub</a> · MIT'},
- en:{h:"Club-fest kitchen",s:"Food safety for your stand at the fest. Tick what is done; ! = without this, there is no fest. State is kept in the browser, nothing is sent.",ht:"The four numbers that matter",print:"Print",reset:"Reset",done:"done",
+ en:{desc:"Food safety checklist for club events, stalls and street parties: before the day, on the day, at clean-up. Tick off, print. No tracking.",logo:"Club event kitchen logo",h:"Club event kitchen",s:"Food safety for your stand at the event. Tick what is done; ! = without this, there is no event. State is kept in the browser, nothing is sent.",ht:"The four numbers that matter",print:"Print",reset:"Reset",done:"done",
    temps:[["≤ 5 °C","Cold chain: meat, fish, dairy, salads with mayonnaise"],["≥ 65 °C","Hot holding: anything cooked that does not go out immediately"],["≥ 72 °C","Core temperature when cooking, 2 minutes; poultry and minced meat always"],["2 h","Maximum without chilling or hot holding, then bin it"]],
    sec:[["Before (the week before)",[
      ["Name a responsible person","One person knows this list, has the thermometer and says no when in doubt.",1],
-     ["Check the notification duty with the municipality / food inspectorate","Serving food to the public must be notified; register fest and stand with the canton (Bern food inspectorate) or municipality unless the event does it.",1],
-     ["Keep the menu simple","Few dishes you can cook through. Nothing with raw egg, no homemade mayonnaise, no tartare.",0],
+     ["Check whether you must notify the municipality / food inspectorate","Serving food to the public must be reported; register the event and stand with the canton (Bern food inspectorate) or municipality unless the event does it.",1],
+     ["Keep the menu simple","A few dishes you can cook through. Nothing with raw egg, no homemade mayonnaise, no tartare.",0],
      ["Declare allergens","The 14 allergens per dish, visible at the stand. Generator: allergen-poster (same folder).",1],
-     ["Plan the chilling","Fridge or cool box with enough ice packs, thermometer inside. One thermometer per box.",1],
+     ["Plan the cooling","Fridge or cool box with enough ice packs, thermometer inside. One thermometer per box.",1],
      ["Water at the stand","Hand washing with running water, soap, disposable towels. No hand-wash station, no stand.",1],
      ["Buy late, deliver cold","Fresh goods the day before or in the morning, cold chain from shop to stand without a break (cool box in the car, not the boot in the sun).",0],
    ]],["On the day, before opening",[
-     ["Thermometer check of chilling","≤ 5 °C measured and written down (time, value). Above 8 °C: assess the goods, do not hope.",1],
+     ["Thermometer check on the fridge/cool box","≤ 5 °C measured and written down (time, value). Above 8 °C: assess the goods, do not hope.",1],
      ["Hands, hair, jewellery, wounds","Wash hands at the start and after every change (money, toilet, waste). Hair tied, rings off, waterproof plaster plus glove.",1],
      ["Separate raw and ready","Separate boards and knives for raw meat (red) and ready food (green). Raw at the bottom of the fridge, ready at the top.",1],
-     ["Separate money and food","One person cash, one person food. If not possible: glove for food, off for money.",0],
+     ["Separate money and food","One person cash, one person food. If that is not possible: glove on for food, off for money.",0],
      ["Waste organised","Bin with lid, away from serving, emptied regularly.",0],
-     ["Who is ill stays away","Diarrhoea, vomiting, fever in the last 48 hours: not on food. The most common cause of outbreaks.",1],
-   ]],["During the fest",[
+     ["Anyone who is ill stays away","Diarrhoea, vomiting, fever in the last 48 hours: not on food. The most common cause of outbreaks.",1],
+   ]],["During the event",[
      ["Cook through and measure","Core 72 °C, 2 minutes. Poultry, minced meat, sausages: always measure, never guess.",1],
-     ["Hot holding ≥ 65 °C","What is ready and waiting stays above 65 °C or goes into chilling. Lukewarm is the danger zone.",1],
+     ["Hot holding ≥ 65 °C","What is ready and waiting stays above 65 °C or goes into the fridge. Lukewarm is the danger zone.",1],
      ["2-hour rule","Anything without chilling or hot holding is binned after 2 hours. Above 30 °C outside: 1 hour.",1],
      ["Refill, do not top up","New goods into a clean container, not onto the remains.",0],
-     ["No finger tasting, no double-dipping spoon","Spoon once, then washing-up. Sounds petty, is norovirus.",0],
-     ["Measure chilling every 2 hours","Note value and time. The sheet is your protection if anyone asks.",1],
+     ["No finger tasting, no double-dipping spoon","Spoon once, then washing-up. Sounds petty, but that is norovirus.",0],
+     ["Check fridge temperature every 2 hours","Note value and time. The sheet is your protection if anyone asks.",1],
    ]],["Clean-up",[
-     ["Leftovers: chilled and eaten today, otherwise binned","Cooked food that stood warm is not kept. Unopened chilled goods yes.",1],
+     ["Leftovers: chilled and eaten today, otherwise binned","Do not keep cooked food that has been standing warm. Unopened chilled goods yes.",1],
      ["Nothing warm into the fridge","Cool first (max 2 h), then in, or it warms everything else.",0],
      ["Clean, then disinfect","Dirt off with detergent first, then disinfectant; the other way round does not work.",0],
      ["Keep the notes","Temperature sheet, receipts, allergen poster: keep for 1 month.",0],
    ]]],
-   foot:'Compiled from a chef’s practice following good hygiene practice principles (Swiss Food Act, Hygiene Ordinance, guideline for clubs and fest catering). A checklist, not legal advice: notification duty and requirements are set by the canton, in Bern the <a href="https://www.weu.be.ch/de/start/themen/lebensmittel-gebrauchsgegenstaende.html">Cantonal Laboratory / food inspectorate</a>. No tracking. <a href="https://github.com/richardcervenka111-create/vereinsfest-kueche">GitHub</a> · MIT'},
+   foot:'Compiled from a chef’s practice following good hygiene practice principles (Swiss Food Act, Hygiene Ordinance, guideline for clubs and event catering). A checklist, not legal advice: notification duty and requirements are set by the canton, in Bern the <a href="https://www.weu.be.ch/de/start/themen/lebensmittel-gebrauchsgegenstaende.html">Cantonal Laboratory / food inspectorate</a>. No tracking. <a href="https://github.com/richardcervenka111-create/vereinsfest-kueche">GitHub</a> · MIT'},
  sk:{h:"Kuchyňa na spolkovej slávnosti",s:"Bezpečnosť potravín pre stánok na slávnosti. Odškrtni hotové; ! = bez toho sa slávnosť nekoná. Stav sa ukladá v prehliadači, nič sa neposiela.",ht:"Štyri čísla, na ktorých záleží",print:"Tlačiť",reset:"Vynulovať",done:"hotové",
    temps:[["≤ 5 °C","Chladiaci reťazec: mäso, ryby, mliečne výrobky, šaláty s majonézou"],["≥ 65 °C","Udržiavanie teplé: všetko uvarené, čo nejde hneď von"],["≥ 72 °C","Teplota v jadre pri varení, 2 minúty; hydina a mleté vždy"],["2 h","Maximum bez chladenia alebo ohrevu, potom preč"]],
    sec:[["Vopred (týždeň pred)",[
@@ -302,7 +302,7 @@ const L={
 let lang="de"; const KEY="vereinsfest-state"; let state={}; try{state=JSON.parse(localStorage.getItem(KEY)||"{}");}catch(e){state={};}
 const $=id=>document.getElementById(id); const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function save(){ try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){} }
-function render(){ const T=L[lang]; document.documentElement.lang=lang; document.title=T.h; $("h").textContent=T.h; $("s").textContent=T.s; $("ht").textContent=T.ht; $("print").textContent=T.print; $("reset").textContent=T.reset; $("foot").innerHTML=T.foot;
+function render(){ const T=L[lang]; document.documentElement.lang=lang; document.title=T.h; const mt=document.querySelector('meta[name=description]'); if(mt&&T.desc) mt.content=T.desc; const lg=document.querySelector('svg.k-logo'); if(lg&&T.logo) lg.setAttribute("aria-label",T.logo); $("h").textContent=T.h; $("s").textContent=T.s; $("ht").textContent=T.ht; $("print").textContent=T.print; $("reset").textContent=T.reset; $("foot").innerHTML=T.foot;
   $("temps").innerHTML=T.temps.map(x=>`<div><b>${esc(x[0])}</b><span>${esc(x[1])}</span></div>`).join("");
   let total=0,done=0; $("lists").innerHTML=T.sec.map((sec,si)=>`<h2>${esc(sec[0])}</h2>`+sec[1].map((it,ii)=>{ const k=si+"-"+ii; total++; if(state[k]) done++; return `<label class="it${it[2]?" crit":""}${state[k]?" done":""}"><input type="checkbox" data-k="${k}"${state[k]?" checked":""}><div><b>${esc(it[0])}</b><span>${esc(it[1])}</span></div></label>`; }).join("")).join("");
   $("bar").style.width=(total?done/total*100:0)+"%"; $("pt").textContent=`${done} / ${total} ${T.done}`;
